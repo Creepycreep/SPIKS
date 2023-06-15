@@ -92,7 +92,7 @@ function building() {
     'src/images/*.*',
     '!src/images/*.svg',
     'src/images/sprite.svg',
-    'src/images/sprite.svg',
+    'src/images/check.svg',
     'src/fonts/*.*',
     'src/css/style.min.css',
     'src/js/main.min.js',
