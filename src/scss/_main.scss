@@ -454,6 +454,46 @@ ul {
       }
     }
 
+    .high-thc span,
+    .high-cbd span,
+    .low-thc span,
+    .low-cbd span {
+      position: relative;
+    }
+
+    .high-thc span:first-child:before,
+    .high-cbd span:first-child::before {
+      bottom: 0;
+      right: -10px;
+      display: block;
+      position: absolute;
+
+      width: 20px;
+      height: 20px;
+
+      content: '';
+      background: url(../images/up.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .low-thc span:first-child::before,
+    .low-cbd span:first-child::before {
+      bottom: 0;
+      right: -10px;
+      display: block;
+      position: absolute;
+
+      width: 20px;
+      height: 20px;
+
+      content: '';
+      background: url(../images/down.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+
     .price-low {
       img {
         transform: rotate(180deg);
