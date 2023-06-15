@@ -1,0 +1,20 @@
+header.header 
+  .container
+    .header__nav 
+      .header__logo 
+        a(href="#") Marketplace
+      .header__search
+        button.icon-box
+          img(src="images/sprite.svg#search").svg-search-dims 
+        input(type="search" placeholder="Search for a product, flower, etc")#search
+      include _nav
+    .header-settings
+      include _range
+      .block-wrapper.menu-wrapper
+        button.menu.block#menu
+          img(src="images/sprite.svg#Union").svg-Union-dims
+        include _dropdown.pug
+    .header-result
+      p 1034,5 Results
+      include _tags
+      

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIKS test</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body> 
+    <header class="header"> 
+      <div class="container">
+        <div class="header__nav"> 
+          <div class="header__logo"> <a href="#">Marketplace</a></div>
+          <div class="header__search">
+            <button class="icon-box"><img class="svg-search-dims" src="images/sprite.svg#search"></button>
+            <input type="search" placeholder="Search for a product, flower, etc" id="search">
+          </div>
+          <ul class="header-categories">
+            <li class="header-categories__item header-categories__item_active block-wrapper"> 
+              <button class="block">
+                <div class="icon-box"><img class="svg-leaf-dims" src="images/sprite.svg#leaf"></div><span>Buds  </span>
+              </button>
+            </li>
+            <li class="header-categories__item block-wrapper">
+              <button class="block"> 
+                <div class="icon-box"><img class="svg-leaf-dims" src="images/sprite.svg#leaf"></div><span>Edible </span>
+              </button>
+            </li>
+            <li class="header-categories__item block-wrapper"> 
+              <button class="block"> 
+                <div class="icon-box"><img class="svg-leaf-dims" src="images/sprite.svg#leaf"></div><span>Non&nbspEdible </span>
+              </button>
+            </li>
+            <li class="header-categories__item block-wrapper">
+              <button class="block"> 
+                <div class="icon-box"><img class="svg-leaf-dims" src="images/sprite.svg#leaf"></div><span>Concentrate</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="header-settings">
+          <div class="header-settings__range price">
+            <label for="price">Price Range</label>
+            <div class="price-value">5000$</div>
+            <input class="input_range" type="range" value="5000" min="234" max="9999" name="price" id="price">
+            <div class="slider"></div>
+            <div class="value"> 
+              <p class="active">243 $</p>
+              <p>9999 $</p>
+            </div>
+          </div>
+          <div class="header-settings__range thc">
+            <label for="price">ТНС, %</label>
+            <div class="price-value">33%</div>
+            <input class="input_range" type="range" value="33" min="0" max="65" name="price" id="price">
+            <div class="slider"></div>
+            <div class="value">
+              <p>65%</p>
+            </div>
+          </div>
+          <div class="header-settings__range cbd">
+            <label for="price">CBD, %</label>
+            <div class="price-value">33%</div>
+            <input class="input_range" type="range" value="33" min="0" max="65" name="price" id="price">
+            <div class="slider"></div>
+            <div class="value"> 
+              <p>65%</p>
+            </div>
+          </div>
+          <div class="block-wrapper menu-wrapper">
+            <button class="menu block" id="menu"><img class="svg-Union-dims" src="images/sprite.svg#Union"></button>
+            <div class="dropdown dropdown_active">
+              <div class="wrapper"> 
+                <p>Sort by :</p>
+                <ul class="dropdown-list"> 
+                  <li><img src="images/sprite.svg#date"><span>Date (New first)</span></li>
+                  <li><img src="images/sprite.svg#date"><span>Date (Old first)</span></li>
+                  <li class="price-high"><img src="images/sprite.svg#arrowUp"><span>Price (High first)</span></li>
+                  <li class="price-low"><img src="images/sprite.svg#arrowUp"><span>Price (Low first)</span></li>
+                  <li class="high-thc"> <span>THC</span><span>Total THC (High first)</span></li>
+                  <li class="low-thc"> <span>THC</span><span>Total THC (Low first)</span></li>
+                  <li class="high-cbd"><span>CBD</span><span>Total CBD (High first)</span></li>
+                  <li class="low-cbd"> <span>CBD</span><span>Total CBD (Low first)</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-result">
+          <p>1034,5 Results</p>
+          <ul class="tag-list">
+            <li> <span>100% Indica</span>
+              <button class="close"><img src="images/sprite.svg#close"></button>
+            </li>
+            <li> <span>>50% Indica</span>
+              <button class="close"><img src="images/sprite.svg#close"></button>
+            </li>
+            <li> <span>Indoor</span>
+              <button class="close"><img src="images/sprite.svg#close"></button>
+            </li>
+            <li> <span>Flower</span>
+              <button class="close"><img src="images/sprite.svg#close"></button>
+            </li>
+            <li> <span>Michigan</span>
+              <button class="close"><img src="images/sprite.svg#close"></button>
+            </li>
+            <li> <span>SellerSeller</span>
+              <button class="close"><img src="images/sprite.svg#close"></button>
+            </li>
+            <li> <span>Distributor</span>
+              <button class="close"><img src="images/sprite.svg#close"></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <aside class="filter">
+      <div class="container"> 
+        <div class="block-wrapper">
+          <div class="block">
+            <details class="checking" open>
+              <summary> 
+                <p>Classification</p><img class="toggle toggleBtn" src="images/sprite.svg#arrow">
+              </summary>
+              <ul class="check-list">
+                <li> 
+                  <input class="checkbox" type="checkbox" checked id="100%Indica">
+                  <label for="100%Indica">100% Indica</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="100%Sativa">
+                  <label for="100%Sativa">100% Sativa</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" checked id="50%Indica">
+                  <label for="50%Indica">>50% Indica</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="&gt;50%Sativa">
+                  <label for="&gt;50%Sativa">>50% Sativa</label>
+                </li>
+              </ul>
+            </details>
+            <details class="checking" open>
+              <summary> 
+                <p>Production Method</p><img class="toggle toggleBtn" src="images/sprite.svg#arrow">
+              </summary>
+              <ul class="check-list">
+                <li> 
+                  <input class="checkbox" type="checkbox" checked id="Indoor">
+                  <label for="Indoor">Indoor</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="Outdoor">
+                  <label for="Outdoor">Outdoor</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="Greenhouse">
+                  <label for="Greenhouse">Greenhouse</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="LightDeprivation">
+                  <label for="LightDeprivation">Light Deprivation</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="MixedLight">
+                  <label for="MixedLight">Mixed Light</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="Other">
+                  <label for="Other">Other</label>
+                </li>
+              </ul>
+            </details>
+            <details class="checking" open>
+              <summary> 
+                <p>Size</p><img class="toggle toggleBtn" src="images/sprite.svg#arrow">
+              </summary>
+              <ul class="check-list">
+                <li> 
+                  <input class="checkbox" type="checkbox" id="Flower" checked>
+                  <label for="Flower">Flower</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="Pre-RollFlower">
+                  <label for="Pre-RollFlower">Pre-Roll Flower</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="Pre-RollInfused">
+                  <label for="Pre-RollInfused">Pre-Roll Infused</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="Pre-RollLeaf">
+                  <label for="Pre-RollLeaf">Pre-Roll Leaf</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="Shake">
+                  <label for="Shake">Shake</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="Smalls">
+                  <label for="Smalls">Smalls</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="Trim">
+                  <label for="Trim"> Trim</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="Keef">
+                  <label for="Keef">Keef</label>
+                </li>
+                <li> 
+                  <input class="checkbox" type="checkbox" id="FreshFrozen">
+                  <label for="FreshFrozen">Fresh Frozen</label>
+                </li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="js/main.min.js"> </script>
+  </body>
+</html>
